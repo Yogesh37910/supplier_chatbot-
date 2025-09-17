@@ -1,0 +1,10 @@
+version: "3.1"
+stories:
+- story: Unable to login flow
+  steps:
+  - intent: unable_to_login
+  - action: utter_ask_screenshot
+  - action: utter_ask_citizenship
+  - action: utter_ask_mobile_number
+  - action: action_send_email_rlnc
+  - action: utter_thank_you
