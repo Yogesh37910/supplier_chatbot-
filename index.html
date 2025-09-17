@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supplier Support Chatbot</title>
+</head>
+<body>
+
+  <!-- This is where the chatbot will appear -->
+  <div id="webchat"></div>
+
+  <!-- Rasa Webchat script -->
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"></script>
+  <script>
+    WebChat.default.init({
+      selector: "#webchat",
+      initPayload: "/greet",
+      socketUrl: "http://YOUR_EC2_PUBLIC_IP:5005",
+      socketPath: "/socket.io/",
+      title: "Supplier Support Bot",
+      subtitle: "How can I help you today?"
+    });
+  </script>
+
+</body>
+</html>
