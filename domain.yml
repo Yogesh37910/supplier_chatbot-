@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - unable_to_login
+  - reactivate_account
+  - unsuspend_account
+  - reset_password
+  - update_email
+  - update_mobile
+  - okta_issues
+  - additional_module_access
+  - additional_segment_access
+  - remove_user
+  - nlu_fallback
+
+entities:
+  - mobile_number
+  - citizenship
+  - email_id
+  - screenshot
+  - issue_description
+
+slots:
+  mobile_number:
+    type: text
+  citizenship:
+    type: text
+  email_id:
+    type: text
+  screenshot:
+    type: text
+  issue_description:
+    type: text
+
+responses:
+  utter_ask_screenshot:
+    - text: "Please upload a screenshot of the issue you are facing."
+  utter_ask_citizenship:
+    - text: "Kindly provide your citizenship for verification."
+  utter_ask_mobile_number:
+    - text: "Please share your current mobile number for Okta verification."
+  utter_thank_you:
+    - text: "Thanks for the request. It will take 2–4 working days to complete your request. Once completed, we will notify you via email."
+  utter_ask_issue_description:
+    - text: "Please describe your issue in detail so we can assist you."
