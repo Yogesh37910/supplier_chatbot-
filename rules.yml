@@ -1,0 +1,8 @@
+version: "3.1"
+rules:
+- rule: Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_ask_issue_description
+  - action: action_send_email_rlnc
+  - action: utter_thank_you
