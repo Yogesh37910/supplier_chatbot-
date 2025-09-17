@@ -1,0 +1,62 @@
+version: "3.1"
+nlu:
+- intent: unable_to_login
+  examples: |
+    - I can't log in to my Reliance account
+    - Unable to login
+    - Login issue
+
+- intent: reactivate_account
+  examples: |
+    - Please reactivate my Reliance account
+    - My account is deactivated
+
+- intent: unsuspend_account
+  examples: |
+    - Unsuspend my Reliance account
+    - My account is suspended
+
+- intent: reset_password
+  examples: |
+    - Reset my Reliance account password
+    - I forgot my password
+
+- intent: update_email
+  examples: |
+    - Update my Reliance account email
+    - Change my registered email
+
+- intent: update_mobile
+  examples: |
+    - Update my mobile number for Okta verification
+    - Change my phone number
+
+- intent: okta_issues
+  examples: |
+    - I have Okta login issues
+    - Okta is not working
+
+- intent: additional_module_access
+  examples: |
+    - I need access to an additional module
+    - Add module access
+
+- intent: additional_segment_access
+  examples: |
+    - I need access to an additional segment
+    - Add segment access
+
+- intent: remove_user
+  examples: |
+    - Remove a user from our supplier account
+    - Delete user from Reliance account
+
+- intent: request_new_account
+  examples: |
+    - I want to create a new Reliance account
+    - Request to create new account
+
+- intent: ppap_request
+  examples: |
+    - I have a PPAP request
+    - Submit PPAP documents
